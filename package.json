@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/Kevnz/cssextras/issues"
   },
-  "style": "./css/pure-extras.css"
+  "style": "./css/pure-extras.css",
   "homepage": "https://github.com/Kevnz/cssextras",
   "devDependencies": {
     "purecss": "^0.6.0",
