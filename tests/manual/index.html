@@ -2,42 +2,18 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>YUI CSS Extras</title>
-<link rel="stylesheet" type="text/css" href="../../../../../yui3/build/cssnormalize/cssnormalize.css">
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.1/build/cssbutton/cssbutton-min.css">
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.0pr1/build/cssgrids-responsive/cssgrids-responsive-min.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <title>Pure Extras</title>
 
-<link rel="stylesheet" type="text/css" href="../../../../../yui3-gallery/build/gallerycss-csstypography/gallerycss-csstypography.css">
-<link rel="stylesheet" type="text/css" href="../../css/cssextras.css">
-<!-- <link rel="stylesheet" type="text/css" href="../../../../build/gallerycss-cssextras/gallerycss-cssextras.css"> -->
+
+<link rel="stylesheet" type="text/css" href="https://rawgithub.com/ccampbell/rainbow/master/themes/github.css">
+<link rel="stylesheet" type="text/css" href="/node_modules/purecss/build/pure.css">
+
+<link rel="stylesheet" type="text/css" href="/css/pure-extras.css">
+
 
 
 <style>
-.header {
-     background: black;
-     min-height: 80px;
-     margin: 0;
-     color:white;
-     padding: 30px 20px;
- }
-    .header h1 {
-        color: white;
-    }
-     .header h2 {
-         font-weight:300;
-         color: #666;
-         margin:0;
-     }
-
-.content {
-    padding: 0 30px 2em;
-}
-
-.content h2 {
-    color:#2B474F;
-    margin:50px 0 20px 0;
-    font-weight:bold;
-}
 
 .spacer {
     margin:8px 0 8px;
@@ -45,91 +21,81 @@
 .wide-popover {
     width:70%;
 }
+body {
+  margin:50px;
+}
+
 </style>
-<script type="text/javascript" src="//use.typekit.net/ajf8ggy.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body>
 
-    <div class="header y-u-1">
+    <div class="header">
 
-        <h1 class="yui3-u-1">YUI3 CSS Extras</h1>
-        <h2 class="yui3-u">Simple styling for images, thumbnails, badges, contextual menus, alerts</h2>
+        <h1>Pure Extras</h1>
+        <h2>CSS styles for images, thumbnails, badges, contextual menus and alerts. Depends on Pure CSS.</h2>
 
     </div>
     <div class="content csstype">
-        <h2>First, include it on your page</h2>
-        <p>Add the CSS on your page:</p>
 
-<pre><code>
-&lt;!-- This module depends on Normalize.css so pull that in first --&gt;<br/>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://necolas.github.com/normalize.css/1.0.2/normalize.css&quot;&gt;<br/>
-&lt;!-- Now, the CSS file for CSSExtras... --&gt;<br/>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://yui.yahooapis.com/gallery-2013.01.09-23-24/build/gallerycss-cssextras/gallerycss-cssextras.css&quot;&gt;
-</code></pre>
+        <h2>Install using <a href="http://npmjs.com">NPM</a></h2>
 
-        <p>Optionally, you can load it through the <code>YUI().use()</code>:</p>
+        <pre><code data-language="html">
+    npm install pure-extras
+        </code></pre>
 
-<pre><code>
-  YUI({
-    //specify a gallery build
-    gallery: 'gallery-2013.01.09-23-24'
-  }).use(gallerycss-cssextras', function(Y) {
-    Y.log('YUI Loaded');
-  });
-
-</code></pre>
-
+        <p>You can fork it from Github too.</p>
+        <p class="text-center">
+            <a class="pure-button pure-button-success pure-button-large" href="http://github.com/kevnz/cssextras">Fork from Github</a>
+        </p>
+        <p>Originally written by <a href="http://www.tilomitra.com/"Tilo Mitra
         <h2>Images</h2>
         <p>
             Styling of three different types are available for images, eliptical, rounded, bordered.
             To use them, just add one of these classes to the <code>&lt;img&gt;</code> tag
         </p>
 
+        <div class="pure-g">
 
-        <img class="yui3-img-eliptical" src="http://dribbble.s3.amazonaws.com/users/9418/screenshots/928345/suhio_shoot.png" width="200" height="150"/>
-        <img class="yui3-img-rounded" src="http://dribbble.s3.amazonaws.com/users/9418/screenshots/928345/suhio_shoot.png" width="200" height="150"/>
-        <img class="yui3-img-bordered" src="http://dribbble.s3.amazonaws.com/users/9418/screenshots/928345/suhio_shoot.png" width="200" height="150"/>
-        <br>
-<!--        <img class="yui3-img-eliptical" src="assets/images/pic_dark.jpg"/>
-        <img class="yui3-img-rounded" src="assets/images/pic_dark.jpg"/>
-        <img class="yui3-img-bordered" src="assets/images/pic_dark.jpg"/>
-        <br>
-        <img class="yui3-img-eliptical" src="assets/images/pic_medium.jpg"/>
-        <img class="yui3-img-rounded" src="assets/images/pic_medium.jpg"/>
-        <img class="yui3-img-bordered" src="assets/images/pic_medium.jpg"/>
-        <br>
-        <img class="yui3-img-eliptical" src="assets/images/pic_light.jpg"/>
-        <img class="yui3-img-rounded" src="assets/images/pic_light.jpg"/>
-        <img class="yui3-img-bordered" src="assets/images/pic_light.jpg"/>
- -->        
+            <div class="pure-u-1-3">
+                <img class="pure-img-eliptical" src="http://dribbble.s3.amazonaws.com/users/9418/screenshots/928345/suhio_shoot.png" width="200" height="150"/>
+            </div>
+            <div class="pure-u-1-3">
+                <img class="pure-img-rounded" src="http://dribbble.s3.amazonaws.com/users/9418/screenshots/928345/suhio_shoot.png" width="200" height="150"/>
+            </div>
+            <div class="pure-u-1-3">
+                <img class="pure-img-bordered" src="http://dribbble.s3.amazonaws.com/users/9418/screenshots/928345/suhio_shoot.png" width="200" height="150"/>
+            </div>
+
+        </div>
         <p>
-            When using class <code>yui3-img-eliptical</code>, if the width and height of the image
-            are equal, it will appear as a circle.
+            When using class <code>pure-img-eliptical</code>, if the width and height of the image
+            are equal, it will appear as a circle. Otherwise, it will appear as an ellipse.
         </p>
-        <img class="yui3-img-eliptical" src="http://dribbble.s3.amazonaws.com/users/23832/screenshots/928731/wigu_closing.jpg" width="200" height="150" width="115" height="115"/>
+        <img class="pure-img-eliptical" src="http://placehold.it/200x200" width="200" height="200"/>
 
         <h2>Thumbnails</h2>
         <p>
-            Add the class <code>yui3-thumbnails</code> to the container <code>&lt;ul&gt;</code>,
-            Then add one of the classes, <code>yui3-thumb-eliptical, yui3-thumb-rounded, or yui3-thumb-bordered</code>, to the <code>&lt;a&gt;</code>,
+            Add the class <code>pure-thumbnails</code> to the container <code>&lt;ul&gt;</code>,
+            Then add one of the classes, <code>pure-thumb-eliptical</code>, <code>pure-thumb-rounded</code>, or <code>pure-thumb-bordered</code>, to the <code>&lt;a&gt;</code>
             .
         </p>
-        <ul class="yui3-thumbnails yui3-g-r">
-            <li class="yui3-u-1-4">
-                <a class="yui3-thumb yui3-thumb-eliptical" href="#">
+        <ul class="pure-thumbnails pure-g-r">
+            <li class="pure-u-1-4">
+                <a class="pure-thumb pure-thumb-eliptical" href="#">
                     <img src="http://placehold.it/250x250"/>
                 </a>
             </li>
-            <li class="yui3-u-1-4">
-                <a class="yui3-thumb yui3-thumb-rounded" href="#">
+            <li class="pure-u-1-4">
+                <a class="pure-thumb pure-thumb-rounded" href="#">
                     <img src="http://placehold.it/250x250"/>
                 </a>
             </li>
-            <li class="yui3-u-1-4">
-                <a class="yui3-thumb yui3-thumb-bordered" href="#"><img src="http://placehold.it/250x250"></a>
+            <li class="pure-u-1-4">
+                <a class="pure-thumb pure-thumb-bordered" href="#"><img src="http://placehold.it/250x250"></a>
             </li>
-            <li class="yui3-u-1-4">
-                <a class="yui3-thumb yui3-thumb-bordered" href="#"><img src="http://placehold.it/250x250"/> 
+            <li class="pure-u-1-4">
+                <a class="pure-thumb pure-thumb-bordered" href="#"><img src="http://placehold.it/250x250"/>
                     <div class="caption">
                         <h3 class="caption-head">Rocket – game concept</h3>
                         <p>This is a great shot from Jozef Mak from Dribbble.
@@ -144,25 +110,25 @@
 
 
         <p>
-            if you have YUI grids on the page, add <code>yui3-u-*</code> for multi-column thumbnails that scale to fit the columns.
+            if you have YUI grids on the page, add <code>pure-u-*</code> for multi-column thumbnails that scale to fit the columns.
         </p>
-        <ul class="yui3-thumbnails yui3-g">
-            <li class="yui3-u-1-4">
-                <a class="yui3-thumb yui3-thumb-eliptical">
+        <ul class="pure-thumbnails pure-g">
+            <li class="pure-u-1-4">
+                <a class="pure-thumb pure-thumb-eliptical">
                     <img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/661196/sasquatch-troop-full.jpg"/>
                 </a>
             </li>
-            <li class="yui3-u-1-4">
-                <a class="yui3-thumb yui3-thumb-rounded">
+            <li class="pure-u-1-4">
+                <a class="pure-thumb pure-thumb-rounded">
                     <img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/661196/sasquatch-troop-full.jpg"/>
                 </a>
             </li>
-            <li class="yui3-u-1-4">
-                <a class="yui3-thumb"><img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/661196/sasquatch-troop-full.jpg"/> 
+            <li class="pure-u-1-4">
+                <a class="pure-thumb"><img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/661196/sasquatch-troop-full.jpg"/>
                 </a>
             </li>
-            <li class="yui3-u-1-4">
-                <a class="yui3-thumb yui3-thumb-bordered"><img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/661196/sasquatch-troop-full.jpg"/> 
+            <li class="pure-u-1-4">
+                <a class="pure-thumb pure-thumb-bordered"><img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/661196/sasquatch-troop-full.jpg"/>
                     <div class="caption">
                         <h3 class="caption-head">Thumbnail label</h3>
                         <p>Curabitur et sapien ac diam pharetra lacinia quis ac tortor. Suspendisse dictum fermentum dui at mollis. Nunc pulvinar blandit diam in vehicula.
@@ -175,14 +141,15 @@
 
         <h2>Badges</h2>
         <p>
-            To create a badge, use a <code>&lt;span&gt;</code> tag, and add one of the badge classes as shown below
+            To create a badge, use a <code>&lt;span&gt;</code> tag, and add one of the badge classes as shown below.
         </p>
-        <span class="yui3-badge">A badge</span>
-        <span class="yui3-badge-success">Success badge</span>
-        <span class="yui3-badge-warning">4</span>
-        <span class="yui3-badge-error">Badges can have a bunch of content</span>
-        <span class="yui3-badge-info">8</span>
-        <span class="yui3-badge-inverse">or not much at all.</span>
+
+        <span class="pure-badge">A badge</span>
+        <span class="pure-badge-success">Success badge</span>
+        <span class="pure-badge-warning">4</span>
+        <span class="pure-badge-error">Badges can have a bunch of content</span>
+        <span class="pure-badge-info">8</span>
+        <span class="pure-badge-inverse">or not much at all.</span>
 
         <h2>Alerts</h2>
         <p>
@@ -190,84 +157,84 @@
         </p>
 
         <h3>Default Alert</h3>
-        <p>The default alert can be set by adding the <code>yui3-alert</code> class name.</p>
-        <div class="yui3-alert">
+        <p>The default alert can be set by adding the <code>pure-alert</code> class name.</p>
+        <div class="pure-alert">
             <label>Welcome back, Tilo.</label>
         </div>
 
         <h3>Error Alert</h3>
-        <p>Alerts in red have the connotation of something going wrong. The error alert can be set by appending the <code>yui3-alert-error</code> class name in addition to the <code>yui3-alert</code> class name.</p>
-        <div class="yui3-alert yui3-alert-error">
+        <p>Alerts in red have the connotation of something going wrong. The error alert can be set by appending the <code>pure-alert-error</code> class name in addition to the <code>pure-alert</code> class name.</p>
+        <div class="pure-alert pure-alert-error">
             <label><strong>Breaking News</strong></label>
             'Most' of Atlanic City Underwater. Atlantic City Boardwalk Destroyed by Sandy.
         </div>
 
         <h3>Warning Alert</h3>
-        <p>If you want to send a warning notification, use the warning alert. It can be set by appending the <code>yui3-alert-warning</code> class name in addition to the <code>yui3-alert</code> class name.</p>
-        <div class="yui3-alert yui3-alert-warning">
+        <p>If you want to send a warning notification, use the warning alert. It can be set by appending the <code>pure-alert-warning</code> class name in addition to the <code>pure-alert</code> class name.</p>
+        <div class="pure-alert pure-alert-warning">
             <label><strong>Update</strong></label>
             Looks like you like the Green Bay Packers so we added the team to your Sports App!
         </div>
 
         <h3>Success Alert</h3>
-        <p>Mission successful? Use the Success Alert! It can be set by appending the <code>yui3-alert-succes</code> class name in addition to the <code>yui3-alert</code> class name.</p>
-        <div class="yui3-alert yui3-alert-success">
+        <p>Mission successful? Use the Success Alert! It can be set by appending the <code>pure-alert-succes</code> class name in addition to the <code>pure-alert</code> class name.</p>
+        <div class="pure-alert pure-alert-success">
             <label><strong>New Badge Unlocked!</strong></label>
             You unlocked the "Paradise" badge!
         </div>
 
         <h2>Contextual Modals</h2>
 
-        <div class="yui3-g spacer">
-            <div class="yui3-u-1-2">
+        <div class="pure-g spacer">
+            <div class="pure-u-1-2">
                 <h3>Bottom Arrow</h3>
-                <div class="yui3-popover bottom">
+                <div class="pure-popover bottom">
                     <div>
                         <p>You have no new notifications.</p>
                         <p>Receive notifications when you comment or discuss content with friends on Yahoo!</p>
-                        <p><a href="#" class="yui3-button block">Learn More</a></p>
+                        <p><a href="#" class="pure-button block">Learn More</a></p>
                     </div>
-                    <div class="yui3-arrow-border"></div>
-                    <div class="yui3-arrow"></div>
+                    <div class="pure-arrow-border"></div>
+                    <div class="pure-arrow"></div>
                 </div>
             </div>
-            <div class="yui3-u-1-2">
+            <div class="pure-u-1-2">
                 <h3>Left Arrow</h3>
-                <div class="yui3-popover left">
+                <div class="pure-popover left">
                     <div>
                         <p>You have no new notifications.</p>
                         <p>Receive notifications when you comment or discuss content with friends on Yahoo!</p>
-                        <p><a href="#" class="yui3-button block">Learn More</a></p>
+                        <p><a href="#" class="pure-button block">Learn More</a></p>
                     </div>
-                    <div class="yui3-arrow-border"></div>
-                    <div class="yui3-arrow"></div>
+                    <div class="pure-arrow-border"></div>
+                    <div class="pure-arrow"></div>
                 </div>
             </div>
         </div>
 
-        <div class="yui3-g spacer">
-            <div class="yui3-u-1-2">
+        <div class="pure-g spacer">
+            <div class="pure-u-1-2">
                 <h3>Top Arrow</h3>
-                <div class="yui3-popover top">
+                <div class="pure-popover top">
                     <div>
                         <p>You have no new notifications.</p>
                         <p>Receive notifications when you comment or discuss content with friends on Yahoo!</p>
-                        <p><a href="#" class="yui3-button block">Learn More</a></p>
+                        <p><a href="#" class="pure-button block">Learn More</a></p>
                     </div>
-                    <div class="yui3-arrow-border"></div>
-                    <div class="yui3-arrow"></div>
+                    <div class="pure-arrow-border"></div>
+                    <div class="pure-arrow"></div>
                 </div>
             </div>
-            <div class="yui3-u-1-2">
+            <div class="pure-u-1-2">
                 <h3>Right Arrow</h3>
-                <div class="yui3-popover right">
+                <div class="pure-popover right">
                     <div>
                         <p>You have no new notifications.</p>
                         <p>Receive notifications when you comment or discuss content with friends on Yahoo!</p>
-                        <p><a href="#" class="yui3-button block">Learn More</a></p>
+                        <p><a href="#" class="pure-button block">Learn More</a></p>
                     </div>
-                    <div class="yui3-arrow-border"></div>
-                    <div class="yui3-arrow"></div>
+                    <div class="pure-arrow-border"></div>
+                    <div class="pure-arrow"></div>
                 </div>
             </div>
         </div>
@@ -275,80 +242,82 @@
         <h2>Contextual Modals with Grids</h2>
         <p>You can use grids within these contextual menus for interesting effects.</p>
 
-        <div class="yui3-g spacer">
-            <div class="yui3-u-1">
+        <div class="pure-g spacer">
+            <div class="pure-u-1">
                 <h4>You have mail.</h4>
-                <div class="yui3-popover bottom wide-popover">
-                    <div class="yui3-g-r">
-                        <div class="yui3-u-1-5"><strong>Yahoo! Mail</strong></div>
-                        <div class="yui3-u-3-5">You have 3 new messages.</div>
-                        <div class="yui3-u-1-5 text-right"><a href="#" class="small yui3-button">Read</a></div>
+                <div class="pure-popover bottom wide-popover">
+                    <div class="pure-g-r">
+                        <div class="pure-u-1-5"><strong>Yahoo! Mail</strong></div>
+                        <div class="pure-u-3-5">You have 3 new messages.</div>
+                        <div class="pure-u-1-5 text-right"><a href="#" class="small pure-button">Read</a></div>
                     </div>
-                    <div class="yui3-arrow-border"></div>
-                    <div class="yui3-arrow"></div>
+                    <div class="pure-arrow-border"></div>
+                    <div class="pure-arrow"></div>
                 </div>
             </div>
         </div>
 
 
-        <div class="yui3-g spacer">
-            <div class="yui3-u-1">
+        <div class="pure-g spacer">
+            <div class="pure-u-1">
                 <h4>Multiple Notification Sources.</h4>
-                <div class="yui3-popover top wide-popover">
-                    <div class="yui3-g-r spacer">
-                        <div class="yui3-u-1-5"><strong>Finance:</strong></div>
-                        <div class="yui3-u-3-5"><strong>AAPL</strong> dropped <strong>5%</strong> to $612.26 in After Hours trading.</div>
-                        <div class="yui3-u-1-5 text-right"><a href="#" class="small yui3-button">Full Chart</a></div>
+                <div class="pure-popover top wide-popover">
+                    <div class="pure-g-r spacer">
+                        <div class="pure-u-1-5"><strong>Finance:</strong></div>
+                        <div class="pure-u-3-5"><strong>AAPL</strong> dropped <strong>5%</strong> to $612.26 in After Hours trading.</div>
+                        <div class="pure-u-1-5 text-right"><a href="#" class="small pure-button">Full Chart</a></div>
                     </div>
-                    <div class="yui3-g-r spacer">
-                        <div class="yui3-u-1-5"><strong>Messenger:</strong></div>
-                        <div class="yui3-u-3-5">3 unread messages from Chad Michaels.</div>
-                        <div class="yui3-u-1-5 text-right"><a href="#" class="small yui3-button">Read</a></div>
+                    <div class="pure-g-r spacer">
+                        <div class="pure-u-1-5"><strong>Messenger:</strong></div>
+                        <div class="pure-u-3-5">3 unread messages from Chad Michaels.</div>
+                        <div class="pure-u-1-5 text-right"><a href="#" class="small pure-button">Read</a></div>
                     </div>
-                    <div class="yui3-g-r spacer">
-                        <div class="yui3-u-1-5"><strong>Sports:</strong></div>
-                        <div class="yui3-u-3-5"><strong>Final Score</strong> Oakland <strong>3-1</strong> Baltimore</div>
-                        <div class="yui3-u-1-5 text-right"><a href="#" class="small yui3-button">Highlights</a></div>
+                    <div class="pure-g-r spacer">
+                        <div class="pure-u-1-5"><strong>Sports:</strong></div>
+                        <div class="pure-u-3-5"><strong>Final Score</strong> Oakland <strong>3-1</strong> Baltimore</div>
+                        <div class="pure-u-1-5 text-right"><a href="#" class="small pure-button">Highlights</a></div>
                     </div>
-                    <div class="yui3-arrow-border"></div>
-                    <div class="yui3-arrow"></div>
+                    <div class="pure-arrow-border"></div>
+                    <div class="pure-arrow"></div>
                 </div>
             </div>
         </div>
 
         <h2>Buttons</h2>
 
-        <p>Buttons are provided through <code>cssbutton</code>, so you'll need the following stylesheet:</p>
-        
-        <pre><code>
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://yui.yahooapis.com/3.9.1/build/cssbutton/cssbutton-min.css&quot;&gt;
-        </code></pre>
+
+
+        <p><code>pure-button</code> provides the basic button styles, but <strong>CSSExtras</strong> adds more styling on top of that, as seen below.</p>
+
+        <h3>Button Types</h3>
 
         <p>
-            <a class="yui3-button">A regular button</a>
-            <a class="yui3-button yui3-button-selected">Selected</a>
+            <a class="pure-button">A regular button</a>
+            <a class="pure-button pure-button-selected">Selected</a>
         </p>
         <p>
-            <a class="yui3-button yui3-button-secondary">Secondary</a>
-            <a class="yui3-button yui3-button-error">Error</a>
-            <a class="yui3-button yui3-button-success">Success</a>
-            <a class="yui3-button yui3-button-warning">Warning</a>
+            <a class="pure-button pure-button-secondary">Secondary</a>
+            <a class="pure-button pure-button-error">Error</a>
+            <a class="pure-button pure-button-success">Success</a>
+            <a class="pure-button pure-button-warning">Warning</a>
         </p>
         <p>
-            <a class="yui3-button yui3-button-block">Block</a>
+            <a class="pure-button pure-button-block">Block</a>
         </p>
 
-        <h3>Large Button</h3>
-        <p>Large buttons have twice the padding of regular buttons. Apply the <code>yui3-button-large</code> class name.</p>
-        <a href="#" class="yui3-button yui3-button-large">Big click target</a>
-        <a href="#" class="yui3-button yui3-button-success yui3-button-large">Big Success</a>
+        <h3>Button Sizes</h3>
+        <p>Large buttons have twice the padding of regular buttons. Apply the <code>pure-button-large</code> class name.</p>
+        <a href="#" class="pure-button pure-button-large">Big click target</a>
+        <a href="#" class="pure-button pure-button-success pure-button-large">Big Success</a>
 
-        <h3>Small Buttons</h3>
-        <p>Small buttons have half the padding of regular buttons. Apply the <code>yui3-button-small</code> class name.</p>
-        <a href="#" class="yui3-button yui3-button-small">Smaller target</a>
-        <a href="#" class="yui3-button yui3-button-secondary yui3-button-small">Smaller Secondary Button</a>
-        <a href="#" class="yui3-button yui3-button-warning yui3-button-small">Smaller Warning Button</a>
-        <a href="#" class="yui3-button yui3-button-error yui3-button-small">Smaller Error Button</a>
+        <p>Small buttons have half the padding of regular buttons. Apply the <code>pure-button-small</code> class name.</p>
+        <a href="#" class="pure-button pure-button-small">Smaller target</a>
+        <a href="#" class="pure-button pure-button-secondary pure-button-small">Smaller Secondary Button</a>
+        <a href="#" class="pure-button pure-button-warning pure-button-small">Smaller Warning Button</a>
+        <a href="#" class="pure-button pure-button-error pure-button-small">Smaller Error Button</a>
+
     </div>
+    <script src="https://rawgithub.com/ccampbell/rainbow/master/js/rainbow.min.js"></script>
+    <script src="https://rawgithub.com/ccampbell/rainbow/master/js/language/generic.js"></script>
 </body>
 </html>
