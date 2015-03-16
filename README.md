@@ -7,17 +7,18 @@ Simple CSS for all those common UI elements that a web application needs. Built 
 Install
 --------
 
-Pure Extras is a set of CSS rules that makes it easier to create common UI components for the web. It is available through **Bower**:
+Pure Extras is a set of CSS rules that makes it easier to create common UI components for the web. It is available through **NPM**:
 
-    bower install pure-extras
+    npm install pure-extras
 
-It's also available through the [YUI Gallery](http://yuilibrary.com/gallery/), under the name `gallerycss-cssextras`. Take a look at the [examples and docs](http://tilomitra.github.com/cssextras/).
+
+Take a look at the [examples and docs](http://kevnz.github.io/cssextras/).
 
 
 What about older browsers?
 --------------------------
 
-Since it's all CSS, nothing breaks in older browsers. This module is tested on IE6+, Chrome, FF and Safari. For best results, use IE8+. IE6 and 7 have some minor vertical alignment issues.
+Since it's all CSS, nothing breaks in older browsers. This module is tested on IE9+, Chrome, FF and Safari.
 
 
 Dependencies
@@ -28,5 +29,4 @@ Dependencies
 Links
 -----
 
-[View the source](https://github.io/tilomitra/cssextras/) on Github. Documentation for this module can be found on [Github Pages](http://tilomitra.github.io/cssextras/)
-
+[View the source](https://github.com/kevnz/cssextras/) on Github. Documentation for this module can be found on [Github Pages](http://kevnz.github.com/cssextras/)
