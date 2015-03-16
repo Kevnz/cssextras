@@ -1,0 +1,35 @@
+{
+  "name": "pure-extras",
+  "version": "1.0.0",
+  "description": "CSS Extras for Pure CSS ",
+  "main": "pure-extra.css",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kevnz/cssextras.git"
+  },
+  "keywords": [
+    "css",
+    "pure",
+    "purecss",
+    "styles",
+    "stylesheets"
+  ],
+  "author": "Kevin Isom <kevin.isom@gmail.com>",
+  "license": "Open",
+  "bugs": {
+    "url": "https://github.com/Kevnz/cssextras/issues"
+  },
+  "style": "./css/pure-extras.css"
+  "homepage": "https://github.com/Kevnz/cssextras",
+  "devDependencies": {
+    "purecss": "^0.6.0",
+    "static-cling": "^0.1.6"
+  }
+}
