@@ -1,6 +1,9 @@
 var gh = require('gh-pages');
 var path = require('path');
 var fs = require('fs');
+if (!fs.existsSync('./dist')) {
+    fs.mkdirSync('dist');
+}
 fs.readFile('./css/pure-extras.css', function (err, data) {
     if (err) {
         throw err;
