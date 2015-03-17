@@ -1,22 +1,13 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
     <title>Pure Extras</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
-<link rel="stylesheet" href="../../css/pure-extras.css">
-<!-- <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/cssextras/master/css/cssextras.css"> -->
-<link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csstypography/master/css/pure-typography.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/ccampbell/rainbow/master/themes/github.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="/css/pure-extras.css">
 
-<link rel="stylesheet" type="text/css" href="https://rawgithub.com/ccampbell/rainbow/master/themes/github.css">
-
-<link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/prettypages/gh-pages/ui.css">
-
-<!-- TYPEKIT -->
-<script type="text/javascript" src="//use.typekit.net/ajf8ggy.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 
 <style>
@@ -27,11 +18,14 @@
 .wide-popover {
     width:70%;
 }
+body {
+  margin:50px;
+}
 
 </style>
 </head>
 
-<body class='pure-skin-sam'>
+<body>
 
     <div class="header">
 
@@ -41,18 +35,17 @@
     </div>
     <div class="content csstype">
 
-        <h2>Install using <a href="http://bower.io">Bower</a></h2>
+        <h2>Install using <a href="http://npmjs.com">NPM</a></h2>
 
         <pre><code data-language="html">
-    bower install pure-extras
-
+    npm install pure-extras
         </code></pre>
 
         <p>You can fork it from Github too.</p>
         <p class="text-center">
-            <a class="pure-button pure-button-success pure-button-large" href="http://github.com/tilomitra/cssextras">Fork from Github</a>
+            <a class="pure-button pure-button-success pure-button-large" href="http://github.com/kevnz/cssextras">Fork from Github</a>
         </p>
-
+        <p>Originally written by <a href="http://www.tilomitra.com/"Tilo Mitra
         <h2>Images</h2>
         <p>
             Styling of three different types are available for images, eliptical, rounded, bordered.
@@ -289,13 +282,9 @@
 
         <h2>Buttons</h2>
 
-        <p>Buttons are provided through the <code>cssbutton</code>, so you'll need the following stylesheet:</p>
 
-        <pre><code data-language="html">
-            <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.1/build/cssbutton/cssbutton-min.css">
-        </code></pre>
 
-        <p><code>cssbutton</code> provides the basic button styles, but <strong>CSSExtras</strong> adds more styling on top of that, as seen below.</p>
+        <p><code>pure-button</code> provides the basic button styles, but <strong>CSSExtras</strong> adds more styling on top of that, as seen below.</p>
 
         <h3>Button Types</h3>
 
