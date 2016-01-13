@@ -13,11 +13,11 @@ fs.readFile('./css/pure-extras.css', function (err, data) {
             if (err) {
                 throw err;
             }
-            fs.readFile('./docs/index.html', function (err, data) {
+            fs.readFile('./docs/index.html', function (err, markup) {
                 if (err) {
                     throw err;
                 }
-                fs.writeFile('./dist/index.html', data, function (err) {
+                fs.writeFile('./dist/index.html', markup, function (err) {
                     if (err) {
                         throw err;
                     }
